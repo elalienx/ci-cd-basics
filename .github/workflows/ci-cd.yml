@@ -1,4 +1,4 @@
-name: Continous Integration with Node & Continuous Deployment on Firebase
+name: CI/CD with Node & Firebase
 
 on:
   push:
