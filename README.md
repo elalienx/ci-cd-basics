@@ -1,4 +1,6 @@
-# Github Actions Demo
+# Continious Integration & Deployment (CI/CD) Basics 🥉
+
+See final result here: [https://ci-cd-basics.web.app](https://ci-cd-basics.web.app)
 
 ## About
 
