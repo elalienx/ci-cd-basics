@@ -1,7 +1,14 @@
-const { dayOfTheWeek } = require('./app');
+// Project files
+const { dayOfTheWeek } = require("./app");
 
+test("The method getDay() returns the long-format day of the week", () => {
+  // Arrange
+  const date_month_day_year = new Date("01/09/2024");
+  const result = "Tuesday";
 
-test('getDay returns the long-format day of the week', () => {
-    const day = dayOfTheWeek( new Date('3/11/2020') );
-    expect( day ).toBe('Wednesday');
+  // Act
+  const test = dayOfTheWeek(date_month_day_year);
+
+  // Assert
+  expect(test).toBe(result);
 });
