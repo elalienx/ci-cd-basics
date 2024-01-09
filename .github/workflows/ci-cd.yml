@@ -1,9 +1,8 @@
-name: Firebase Continuous Deployment
+name: Continous Integration with Node & Continuous Deployment on Firebase
 
 on:
   push:
-    branches: [ master ]
-
+    branches: [master]
 
 jobs:
   deploy:
@@ -13,7 +12,8 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 12
-      - run: npm ci
+      - run: npm clean-install
+      - run: npm test
       - run: npm run build
       - uses: w9jds/firebase-action@master
         with:
